@@ -63,6 +63,7 @@ int main(void)
 }
 
 t_log* iniciar_logger(void){
+
     t_log* nuevo_logger = log_create("cliente.log","CL_LOG", 1, LOG_LEVEL_INFO);
 
   if(nuevo_logger == NULL){
@@ -77,6 +78,7 @@ t_log* iniciar_logger(void){
 t_config* iniciar_config(void)
 {
 	t_config* nuevo_config = config_create("cliente.config");
+S
 	if (nuevo_config == NULL){
 		perror("al intentar cargar el config");
 		exit(EXIT_FAILURE);
